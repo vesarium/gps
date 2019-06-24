@@ -7,6 +7,7 @@
         "ext-iconv": "*",
         "sensio/framework-extra-bundle": "^5.3",
         "sensiolabs/security-checker": "^6.0",
+        "symfony/asset": "4.3.*",
         "symfony/console": "4.3.*",
         "symfony/dotenv": "4.3.*",
         "symfony/flex": "^1.1",
@@ -63,6 +64,7 @@
         }
     },
     "require-dev": {
-        "symfony/maker-bundle": "^1.11"
+        "symfony/maker-bundle": "^1.11",
+        "symfony/profiler-pack": "^1.0"
     }
 }

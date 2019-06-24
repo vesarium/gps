@@ -17,7 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class LuckyController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/", name="app_homepage")
      */
     public function number()
     {
@@ -31,8 +31,19 @@ class LuckyController extends Controller
     /**
      * @Route("/news/{slug}")
      */
-    public function show($slug){
+    public function show($slug)
+    {
+        $comments = [
+            'comment 1111comment 1111comment 1111comment 1111comment 1111',
+            'Now would this be apple wood smoked bacon? Or traditional bacon - IMHO it makes a difference.',
+            'comment 333 333 3333',
+        ];
 
-        return new Response(sprintf('Future news page with %s', $slug));
+        //dump($slug, $this);
+
+        return $this->render('article/show.html.twig', [
+           'title' => ucwords(str_replace('-',' ', $slug)),
+            'comments' => $comments,
+        ]);
     }
 }

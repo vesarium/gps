@@ -21,15 +21,11 @@ class LuckyController extends Controller
      */
     public function number()
     {
-        $number = mt_rand(0, 100);
-
-        return $this->render('lucky/number.html.twig', array(
-            'number' => $number,
-        ));
+       return $this->render('article/homepage.html.twig');
     }
 
     /**
-     * @Route("/news/{slug}")
+     * @Route("/news/{slug}", name="article_show")
      */
     public function show($slug)
     {

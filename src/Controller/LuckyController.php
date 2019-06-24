@@ -17,7 +17,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class LuckyController extends Controller
 {
     /**
-     * @Route("/lucky/number")
+     * @Route("/")
      */
     public function number()
     {
@@ -26,5 +26,13 @@ class LuckyController extends Controller
         return $this->render('lucky/number.html.twig', array(
             'number' => $number,
         ));
+    }
+
+    /**
+     * @Route("/news/{slug}")
+     */
+    public function show($slug){
+
+        return new Response(sprintf('Future news page with %s', $slug));
     }
 }

@@ -2,22 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheets %}
-        <link href="{{ asset('http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700,800') }}" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet"/>
-        <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet"/>
-        <link href="{{ asset('css/templatemo-main.css') }}" rel="stylesheet"/>
-        <link href="{{ asset('css/hero-slider.css') }}" rel="stylesheet"/>
-        <link href="{{ asset('css/owl-carousel.css') }}" rel="stylesheet"/>
-       
+        <link href="{{ asset('css/templatemo-style.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/all.min.css')}}" rel="stylesheet"/>
+
+
+
     {% endblock %}
 </head>
 <body>
 {% block body %}{% endblock %}
 {% block javascripts %}
-    <script src="{{ asset('js/main.js') }}"></script>
-    <script src="{{ asset('js/plugins.js.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script sr="{{ asset('js/parallax.min.js') }}"></script>
 
 {% endblock %}
 </body>

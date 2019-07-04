@@ -53,6 +53,7 @@ small {
 .parallax-window {
   min-height: 1100px;
   background: transparent;
+  background-image: url("img/bg-01.jpg");
 }
 
 .tm-bg-white-transparent {

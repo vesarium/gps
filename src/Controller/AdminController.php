@@ -18,7 +18,7 @@ class AdminController extends AbstractController
 
     public function load()
     {
-        return $this->render('admin/admin-main', [ ]);
+        return $this->render('admin/admin-main.twig.html', [ ]);
     }
 
     /**
@@ -27,7 +27,7 @@ class AdminController extends AbstractController
 
     public function showData()
     {
-        return $this->render('admin/data-visualisation', [ ]);
+        return $this->render('admin/data-visualisation.twig.html', [ ]);
     }
 
 

@@ -13,7 +13,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 class AdminController extends AbstractController
 {
     /**
-     * @Route ("/admin", name="admin_homepage");
+     * @Route ("/dashboard", name="dashboard_main");
      */
 
     public function load()

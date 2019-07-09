@@ -31,14 +31,14 @@ class DevicesController extends AbstractController
         $entityManager = $this->getDoctrine()->getManager();
 
         $product = new Devices();
-          $product->setDeviceName('Dolly2');
-          $product->setDescription('Ergonomic and stylish!');
+        $product->setDeviceName('Dolly2');
+        $product->setDescription('Ergonomic and stylish!');
 
-          // tell Doctrine you want to (eventually) save the Product (no queries yet)
-         // $entityManager->persist($product);
-/*
-          // actually executes the queries (i.e. the INSERT query)
-   */       $entityManager->flush();
+        // tell Doctrine you want to (eventually) save the Product (no queries yet)
+        $entityManager->persist($product);
+
+        // actually executes the queries (i.e. the INSERT query)
+        $entityManager->flush();
 
         return new Response('Saved new product with id '.$product->getId());
     }

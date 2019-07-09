@@ -29,7 +29,7 @@ class DevicesController extends AbstractController
         // you can fetch the EntityManager via $this->getDoctrine()
         // or you can add an argument to the action: createProduct(EntityManagerInterface $entityManager)
         $entityManager = $this->getDoctrine()->getManager();
-
+/*
         $product = new Devices();
         $product->setDeviceName('Dolly2');
         $product->setDescription('Ergonomic and stylish!');
@@ -39,7 +39,7 @@ class DevicesController extends AbstractController
 
         // actually executes the queries (i.e. the INSERT query)
         $entityManager->flush();
-
+/*/
         return new Response('Saved new product with id '.$product->getId());
     }
 }

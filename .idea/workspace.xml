@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e706afcd-6456-42ae-bc2b-87baae248ba4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/admin/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/maps.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/preferences.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin-template/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin-template/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin-template/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin-template/css/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin-template/css/templatemo_main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin-template/js/Chart.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin-template/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin-template/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin-template/js/templatemo_script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin-base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin-main.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin-main.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/data-visualisation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/devices.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/data-visualization.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/data-visualization.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/maps.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/maps.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/preferences.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/preferences.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/sign-in.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/header.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,16 +56,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/admin/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+            <state relative-caret-position="374">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -187,8 +165,8 @@
         <option value="$PROJECT_DIR$/templates/admin/devices.html.twig" />
         <option value="$PROJECT_DIR$/templates/admin/login.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
-        <option value="$PROJECT_DIR$/templates/admin/header.html" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/templates/admin/header.html" />
       </list>
     </option>
   </component>
@@ -390,7 +368,7 @@
       <workItem from="1563565500331" duration="1197000" />
       <workItem from="1563617345561" duration="1735000" />
       <workItem from="1563719283329" duration="3125000" />
-      <workItem from="1563738528904" duration="4784000" />
+      <workItem from="1563738528904" duration="5220000" />
     </task>
     <task id="LOCAL-00001" summary="luckynumber controller route change">
       <created>1561224974290</created>
@@ -403,7 +381,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63948000" />
+    <option name="totallyTimeSpent" value="64384000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -705,13 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -723,6 +694,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="94" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
         </state>
       </provider>
     </entry>

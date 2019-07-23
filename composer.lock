@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d484ef0f858ead7d8017935c33a9becc",
+    "content-hash": "5ee5b11abcd68836c9074db8875e555f",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1206,6 +1206,156 @@
             "time": "2018-06-14T14:45:07+00:00"
         },
         {
+            "name": "eliuflorez/google-map",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EliuFlorez/google-map.git",
+                "reference": "b96e3975314a83f806ed86623f7b219d2c96ee9f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EliuFlorez/google-map/zipball/b96e3975314a83f806ed86623f7b219d2c96ee9f",
+                "reference": "b96e3975314a83f806ed86623f7b219d2c96ee9f",
+                "shasum": ""
+            },
+            "require": {
+                "fsi/json-builder": "^3.1",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0",
+                "satooshi/php-coveralls": "^2.1",
+                "widop/http-adapter": "^1.1",
+                "willdurand/geocoder": "^4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ivory\\GoogleMap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eliu Florez",
+                    "email": "eliufz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Google Map API v3 integration for PHP 7.+",
+            "keywords": [
+                "google map"
+            ],
+            "time": "2019-03-01T16:47:09+00:00"
+        },
+        {
+            "name": "eliuflorez/google-map-bundle",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EliuFlorez/google-map-bundle.git",
+                "reference": "dee885bf76574aaf2946120b3142423f4b85f398"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EliuFlorez/google-map-bundle/zipball/dee885bf76574aaf2946120b3142423f4b85f398",
+                "reference": "dee885bf76574aaf2946120b3142423f4b85f398",
+                "shasum": ""
+            },
+            "require": {
+                "eliuflorez/google-map": "^1.2",
+                "php": ">=7.0",
+                "symfony/framework-bundle": "^4.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0",
+                "satooshi/php-coveralls": "^2.1",
+                "symfony/form": "^4.2",
+                "symfony/yaml": "^4.2",
+                "twig/twig": "^2.6",
+                "willdurand/geocoder": "^4.2"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Ivory\\GoogleMapBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eliu Florez",
+                    "email": "eliufz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides a google map integration for your Symfony 4.2 Project.",
+            "keywords": [
+                "google map symfony 4.2"
+            ],
+            "time": "2019-03-01T16:49:06+00:00"
+        },
+        {
+            "name": "fsi/json-builder",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fsi-open/ivory-json-builder.git",
+                "reference": "f51eb2828ef6b812d0fdd992fc3c998e5fa2e278"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fsi-open/ivory-json-builder/zipball/f51eb2828ef6b812d0fdd992fc3c998e5fa2e278",
+                "reference": "f51eb2828ef6b812d0fdd992fc3c998e5fa2e278",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^5.6|^7.0",
+                "symfony/property-access": "^2.7|^3.0|^4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpunit/phpunit": "^5.0",
+                "symfony/phpunit-bridge": "^2.7|^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ivory\\JsonBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric GELOEN",
+                    "email": "geloen.eric@gmail.com"
+                }
+            ],
+            "description": "JSON builder with escaping control for PHP 5.6+",
+            "keywords": [
+                "Escape",
+                "builder",
+                "json"
+            ],
+            "time": "2018-02-01T09:00:01+00:00"
+        },
+        {
             "name": "jdorn/sql-formatter",
             "version": "v1.2.17",
             "source": {
@@ -1317,6 +1467,28 @@
                 "markdown"
             ],
             "time": "2019-01-03T19:47:10+00:00"
+        },
+        {
+            "name": "leaflet/leaflet",
+            "version": "v1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aissasell/leaflet.git",
+                "reference": "7eadefcbd4d8bbb9af36a2b78186e6d068afa177"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aissasell/leaflet/zipball/7eadefcbd4d8bbb9af36a2b78186e6d068afa177",
+                "reference": "7eadefcbd4d8bbb9af36a2b78186e6d068afa177",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "an open-source JavaScript library for mobile-friendly interactive maps",
+            "time": "2019-03-23T14:27:52+00:00"
         },
         {
             "name": "michelf/php-markdown",
@@ -2434,16 +2606,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v4.3.1",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "4e6c670af81c4fb0b6c08b035530a9915d0b691f"
+                "reference": "d257021c1ab28d48d24a16de79dfab445ce93398"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/4e6c670af81c4fb0b6c08b035530a9915d0b691f",
-                "reference": "4e6c670af81c4fb0b6c08b035530a9915d0b691f",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/d257021c1ab28d48d24a16de79dfab445ce93398",
+                "reference": "d257021c1ab28d48d24a16de79dfab445ce93398",
                 "shasum": ""
             },
             "require": {
@@ -2500,7 +2672,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-30T16:10:05+00:00"
+            "time": "2019-06-13T11:03:18+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -2710,16 +2882,16 @@
         },
         {
             "name": "symfony/framework-bundle",
-            "version": "v4.3.1",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/framework-bundle.git",
-                "reference": "fe407e6840d2b8f34c3fb67111e05c6d65319ef6"
+                "reference": "5aab516cef8e3772d6f7daa3ab62cd38713aae08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/fe407e6840d2b8f34c3fb67111e05c6d65319ef6",
-                "reference": "fe407e6840d2b8f34c3fb67111e05c6d65319ef6",
+                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/5aab516cef8e3772d6f7daa3ab62cd38713aae08",
+                "reference": "5aab516cef8e3772d6f7daa3ab62cd38713aae08",
                 "shasum": ""
             },
             "require": {
@@ -2779,7 +2951,7 @@
                 "symfony/serializer": "^4.3",
                 "symfony/stopwatch": "~3.4|~4.0",
                 "symfony/templating": "~3.4|~4.0",
-                "symfony/translation": "~4.2",
+                "symfony/translation": "~4.3",
                 "symfony/twig-bundle": "~2.8|~3.2|~4.0",
                 "symfony/validator": "^4.1",
                 "symfony/var-dumper": "^4.3",
@@ -2828,7 +3000,7 @@
             ],
             "description": "Symfony FrameworkBundle",
             "homepage": "https://symfony.com",
-            "time": "2019-06-06T08:35:06+00:00"
+            "time": "2019-06-26T06:50:02+00:00"
         },
         {
             "name": "symfony/http-client",
@@ -4190,6 +4362,62 @@
             "time": "2019-05-27T08:16:38+00:00"
         },
         {
+            "name": "symfony/templating",
+            "version": "v4.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/templating.git",
+                "reference": "b0c5295d09dfbeae3bd3f52990468587ed82785c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/templating/zipball/b0c5295d09dfbeae3bd3f52990468587ed82785c",
+                "reference": "b0c5295d09dfbeae3bd3f52990468587ed82785c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "require-dev": {
+                "psr/log": "~1.0"
+            },
+            "suggest": {
+                "psr/log-implementation": "For using debug logging in loaders"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Templating\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Templating Component",
+            "homepage": "https://symfony.com",
+            "time": "2019-05-30T16:10:05+00:00"
+        },
+        {
             "name": "symfony/twig-bridge",
             "version": "v4.3.1",
             "source": {
@@ -4659,6 +4887,241 @@
     ],
     "packages-dev": [
         {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.4",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
+                "psr/log": "^1.0"
+            },
+            "suggest": {
+                "psr/log": "Required for using the Log middleware"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2018-04-22T15:46:56+00:00"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20T10:07:11+00:00"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0",
+                "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "ext-zlib": "*",
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+            },
+            "suggest": {
+                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "homepage": "https://github.com/Tobion"
+                }
+            ],
+            "description": "PSR-7 message implementation that also provides common utility methods",
+            "keywords": [
+                "http",
+                "message",
+                "psr-7",
+                "request",
+                "response",
+                "stream",
+                "uri",
+                "url"
+            ],
+            "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "mkebza/google-maps-bundle",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mkebza/GoogleMapsBundle.git",
+                "reference": "986fd2974bb5aa1e15dfc4781af6f76d7881b46e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mkebza/GoogleMapsBundle/zipball/986fd2974bb5aa1e15dfc4781af6f76d7881b46e",
+                "reference": "986fd2974bb5aa1e15dfc4781af6f76d7881b46e",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "~6.0",
+                "php": "^7.1.3",
+                "symfony/cache": "~3.4|~4.0",
+                "symfony/config": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/options-resolver": "~3.4|~4.0",
+                "symfony/twig-bundle": "~3.4|~4.0"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^4.1"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "MKebza\\GoogleMaps\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marek Kebza",
+                    "email": "marek@kebza.cz"
+                }
+            ],
+            "description": "Symfony bundle for some Google Maps functions",
+            "time": "2018-12-13T04:35:41+00:00"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v4.2.2",
             "source": {
@@ -4708,6 +5171,96 @@
                 "php"
             ],
             "time": "2019-05-25T20:07:01+00:00"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06T14:39:51+00:00"
+        },
+        {
+            "name": "ralouphie/getallheaders",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+                "reference": "120b605dfeb996808c31b6477290a714d356e822",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5 || ^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "time": "2019-03-08T08:55:37+00:00"
         },
         {
             "name": "symfony/maker-bundle",
@@ -4774,6 +5327,60 @@
                 "scaffolding"
             ],
             "time": "2019-04-19T17:26:45+00:00"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "v4.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "40762ead607c8f792ee4516881369ffa553fee6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/40762ead607c8f792ee4516881369ffa553fee6f",
+                "reference": "40762ead607c8f792ee4516881369ffa553fee6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony OptionsResolver Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "time": "2019-06-13T11:01:17+00:00"
         },
         {
             "name": "symfony/profiler-pack",

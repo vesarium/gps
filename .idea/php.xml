@@ -79,6 +79,18 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/michelf/php-markdown" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-markdown-bundle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/eliuflorez/google-map" />
+      <path value="$PROJECT_DIR$/vendor/eliuflorez/google-map-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/mkebza/google-maps-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fsi/json-builder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/leaflet/leaflet" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

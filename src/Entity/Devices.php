@@ -16,7 +16,6 @@ class Devices
      */
     private $id;
 
-
     /**
      * @ORM\Column(type="text", nullable=true)
      */

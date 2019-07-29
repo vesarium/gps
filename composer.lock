@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ee5b11abcd68836c9074db8875e555f",
+    "content-hash": "3d9c65172694303f475f9096f24309e2",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1206,156 +1206,6 @@
             "time": "2018-06-14T14:45:07+00:00"
         },
         {
-            "name": "eliuflorez/google-map",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/EliuFlorez/google-map.git",
-                "reference": "b96e3975314a83f806ed86623f7b219d2c96ee9f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/EliuFlorez/google-map/zipball/b96e3975314a83f806ed86623f7b219d2c96ee9f",
-                "reference": "b96e3975314a83f806ed86623f7b219d2c96ee9f",
-                "shasum": ""
-            },
-            "require": {
-                "fsi/json-builder": "^3.1",
-                "php": ">=7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.0",
-                "satooshi/php-coveralls": "^2.1",
-                "widop/http-adapter": "^1.1",
-                "willdurand/geocoder": "^4.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ivory\\GoogleMap\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eliu Florez",
-                    "email": "eliufz@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Google Map API v3 integration for PHP 7.+",
-            "keywords": [
-                "google map"
-            ],
-            "time": "2019-03-01T16:47:09+00:00"
-        },
-        {
-            "name": "eliuflorez/google-map-bundle",
-            "version": "1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/EliuFlorez/google-map-bundle.git",
-                "reference": "dee885bf76574aaf2946120b3142423f4b85f398"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/EliuFlorez/google-map-bundle/zipball/dee885bf76574aaf2946120b3142423f4b85f398",
-                "reference": "dee885bf76574aaf2946120b3142423f4b85f398",
-                "shasum": ""
-            },
-            "require": {
-                "eliuflorez/google-map": "^1.2",
-                "php": ">=7.0",
-                "symfony/framework-bundle": "^4.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.0",
-                "satooshi/php-coveralls": "^2.1",
-                "symfony/form": "^4.2",
-                "symfony/yaml": "^4.2",
-                "twig/twig": "^2.6",
-                "willdurand/geocoder": "^4.2"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-4": {
-                    "Ivory\\GoogleMapBundle\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eliu Florez",
-                    "email": "eliufz@gmail.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Provides a google map integration for your Symfony 4.2 Project.",
-            "keywords": [
-                "google map symfony 4.2"
-            ],
-            "time": "2019-03-01T16:49:06+00:00"
-        },
-        {
-            "name": "fsi/json-builder",
-            "version": "3.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fsi-open/ivory-json-builder.git",
-                "reference": "f51eb2828ef6b812d0fdd992fc3c998e5fa2e278"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fsi-open/ivory-json-builder/zipball/f51eb2828ef6b812d0fdd992fc3c998e5fa2e278",
-                "reference": "f51eb2828ef6b812d0fdd992fc3c998e5fa2e278",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": "^5.6|^7.0",
-                "symfony/property-access": "^2.7|^3.0|^4.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "phpunit/phpunit": "^5.0",
-                "symfony/phpunit-bridge": "^2.7|^3.0|^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Ivory\\JsonBuilder\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Eric GELOEN",
-                    "email": "geloen.eric@gmail.com"
-                }
-            ],
-            "description": "JSON builder with escaping control for PHP 5.6+",
-            "keywords": [
-                "Escape",
-                "builder",
-                "json"
-            ],
-            "time": "2018-02-01T09:00:01+00:00"
-        },
-        {
             "name": "jdorn/sql-formatter",
             "version": "v1.2.17",
             "source": {
@@ -1878,42 +1728,42 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v5.3.1",
+            "version": "v5.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "5f75c4658b03301cba17baa15a840b57b72b4262"
+                "reference": "585f4b3a1c54f24d1a8431c729fc8f5acca20c8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/5f75c4658b03301cba17baa15a840b57b72b4262",
-                "reference": "5f75c4658b03301cba17baa15a840b57b72b4262",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/585f4b3a1c54f24d1a8431c729fc8f5acca20c8a",
+                "reference": "585f4b3a1c54f24d1a8431c729fc8f5acca20c8a",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "^1.0",
                 "doctrine/persistence": "^1.0",
                 "php": ">=7.1.3",
-                "symfony/config": "^3.4|^4.2",
-                "symfony/dependency-injection": "^3.4|^4.2",
-                "symfony/framework-bundle": "^3.4|^4.2",
-                "symfony/http-kernel": "^3.4|^4.2"
+                "symfony/config": "^3.4|^4.3",
+                "symfony/dependency-injection": "^3.4|^4.3",
+                "symfony/framework-bundle": "^3.4|^4.3",
+                "symfony/http-kernel": "^3.4|^4.3"
             },
             "require-dev": {
                 "doctrine/doctrine-bundle": "^1.6",
                 "doctrine/orm": "^2.5",
                 "nyholm/psr7": "^1.1",
-                "symfony/browser-kit": "^3.4|^4.2",
-                "symfony/dom-crawler": "^3.4|^4.2",
-                "symfony/expression-language": "^3.4|^4.2",
-                "symfony/finder": "^3.4|^4.2",
+                "symfony/browser-kit": "^3.4|^4.3",
+                "symfony/dom-crawler": "^3.4|^4.3",
+                "symfony/expression-language": "^3.4|^4.3",
+                "symfony/finder": "^3.4|^4.3",
                 "symfony/monolog-bridge": "^3.0|^4.0",
                 "symfony/monolog-bundle": "^3.2",
                 "symfony/phpunit-bridge": "^3.4.19|^4.1.8",
                 "symfony/psr-http-message-bridge": "^1.1",
-                "symfony/security-bundle": "^3.4|^4.2",
-                "symfony/twig-bundle": "^3.4|^4.2",
-                "symfony/yaml": "^3.4|^4.2",
+                "symfony/security-bundle": "^3.4|^4.3",
+                "symfony/twig-bundle": "^3.4|^4.3",
+                "symfony/yaml": "^3.4|^4.3",
                 "twig/twig": "~1.12|~2.0"
             },
             "suggest": {
@@ -1924,7 +1774,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "5.3.x-dev"
+                    "dev-master": "5.4.x-dev"
                 }
             },
             "autoload": {
@@ -1947,7 +1797,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2019-04-10T06:00:20+00:00"
+            "time": "2019-07-08T08:31:25+00:00"
         },
         {
             "name": "sensiolabs/security-checker",
@@ -4886,6 +4736,156 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "eliuflorez/google-map",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EliuFlorez/google-map.git",
+                "reference": "b96e3975314a83f806ed86623f7b219d2c96ee9f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EliuFlorez/google-map/zipball/b96e3975314a83f806ed86623f7b219d2c96ee9f",
+                "reference": "b96e3975314a83f806ed86623f7b219d2c96ee9f",
+                "shasum": ""
+            },
+            "require": {
+                "fsi/json-builder": "^3.1",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0",
+                "satooshi/php-coveralls": "^2.1",
+                "widop/http-adapter": "^1.1",
+                "willdurand/geocoder": "^4.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ivory\\GoogleMap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eliu Florez",
+                    "email": "eliufz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Google Map API v3 integration for PHP 7.+",
+            "keywords": [
+                "google map"
+            ],
+            "time": "2019-03-01T16:47:09+00:00"
+        },
+        {
+            "name": "eliuflorez/google-map-bundle",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EliuFlorez/google-map-bundle.git",
+                "reference": "dee885bf76574aaf2946120b3142423f4b85f398"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EliuFlorez/google-map-bundle/zipball/dee885bf76574aaf2946120b3142423f4b85f398",
+                "reference": "dee885bf76574aaf2946120b3142423f4b85f398",
+                "shasum": ""
+            },
+            "require": {
+                "eliuflorez/google-map": "^1.2",
+                "php": ">=7.0",
+                "symfony/framework-bundle": "^4.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0",
+                "satooshi/php-coveralls": "^2.1",
+                "symfony/form": "^4.2",
+                "symfony/yaml": "^4.2",
+                "twig/twig": "^2.6",
+                "willdurand/geocoder": "^4.2"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "Ivory\\GoogleMapBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eliu Florez",
+                    "email": "eliufz@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides a google map integration for your Symfony 4.2 Project.",
+            "keywords": [
+                "google map symfony 4.2"
+            ],
+            "time": "2019-03-01T16:49:06+00:00"
+        },
+        {
+            "name": "fsi/json-builder",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fsi-open/ivory-json-builder.git",
+                "reference": "f51eb2828ef6b812d0fdd992fc3c998e5fa2e278"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fsi-open/ivory-json-builder/zipball/f51eb2828ef6b812d0fdd992fc3c998e5fa2e278",
+                "reference": "f51eb2828ef6b812d0fdd992fc3c998e5fa2e278",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^5.6|^7.0",
+                "symfony/property-access": "^2.7|^3.0|^4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpunit/phpunit": "^5.0",
+                "symfony/phpunit-bridge": "^2.7|^3.0|^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ivory\\JsonBuilder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eric GELOEN",
+                    "email": "geloen.eric@gmail.com"
+                }
+            ],
+            "description": "JSON builder with escaping control for PHP 5.6+",
+            "keywords": [
+                "Escape",
+                "builder",
+                "json"
+            ],
+            "time": "2018-02-01T09:00:01+00:00"
+        },
         {
             "name": "guzzlehttp/guzzle",
             "version": "6.3.3",

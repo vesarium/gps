@@ -15,10 +15,16 @@ class DevicesController extends AbstractController
      */
     public function index()
     {
-        return $this->render('devices/index.html.twig', [
-            'controller_name' => 'DevicesController',
+        $devices = $this->getDoctrine()
+            ->getRepository(Devices::class)
+            ->findAll();
+        if (!$devices) {
+            throw $this->createNotFoundException(
+                'No product found '
+            );
+        }
+        return new Response($devices[1]->getDeviceName());
 
-        ]);
     }
 
     /**

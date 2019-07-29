@@ -3,11 +3,10 @@
 
 namespace App\Controller;
 
-use Psr\Container\ContainerInterface;
-use Symfony\Component\HttpFoundation\JsonResponse;
+use App\Entity\Devices;
+use App\Entity\Deviceslocation;
+
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Cache\Adapter\AdapterInterface;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class AdminController extends AbstractController
@@ -27,7 +26,19 @@ class AdminController extends AbstractController
 
     public function showData()
     {
-        return $this->render('admin/devices.html.twig', [ ]);
+        $devices = $this->getDoctrine()
+            ->getRepository(Deviceslocation::class)
+            ->findAll();
+        if (!$devices) {
+            throw $this->createNotFoundException(
+                'No records found '
+            );
+        }
+        return $this->render('admin/devices.html.twig', [
+            'devices' => $devices,
+        ]);
+
+
     }
 
     /**

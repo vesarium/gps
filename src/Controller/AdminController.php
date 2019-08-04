@@ -3,7 +3,7 @@
 
 namespace App\Controller;
 
-use App\Entity\Devices;
+use App\Entity\Appusers;
 use App\Entity\Deviceslocation;
 
 use Symfony\Component\Routing\Annotation\Route;
@@ -17,9 +17,11 @@ class AdminController extends AbstractController
 
     public function load()
     {
-        $user = $this->getUser();
+        $activeUser = $this->getUser();
+
         return $this->render('admin/admin-main.html.twig', [
-            'name' => $user->getname(),
+
+            'name' => $activeUser->getName(),
         ]);
 
     }

@@ -29,7 +29,7 @@ security:
                 path:   app_logout
                 #target: /
     access_control:
-        #- { path: ^/dashboard, roles: ROLE_USER }
+        - { path: ^/dashboard, roles: ROLE_USER }
         #- { path: ^/,          roles: IS_AUTHENTICATED_ANONYMOUSLY }
         #- { path: ^/,          roles: ROLE_USER }
 

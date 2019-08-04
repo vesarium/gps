@@ -1,36 +1,81 @@
-{% extends 'admin-base.html.twig' %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+        <link href="{{ asset('admin-template/css/bootstrap.min.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('admin-template/css/font-awesome.min.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('admin-template/css/templatemo-style.css') }}" rel="stylesheet"/>
+        <style>
+            body{
+                background: #FFFFFF;
+            }
+            .templatemo-content-widget{
+                margin-top: 100px;
+            }
+            .home-banner-area {
 
+                background: url('img/home-banner-bg.jpg');
+                background-size: cover;
+
+            }
+
+            .white-bg{
+                opacity:0.9;
+            }
+        </style>
+    {% endblock %}
+</head>
+<body class="home-banner-area">
 {% block body %}
-    <div class="templatemo-content-widget templatemo-login-widget white-bg">
-        <header class="text-center">
-            <div class="square"></div>
-            <h1>Visual Admin</h1>
-        </header>
-        <form action="index.html" class="templatemo-login-form">
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
-                    <input type="text" class="form-control" placeholder="js@dashboard.com">
+    <section >
+        <div class="container">
+
+            <div class="row fullscreen d-flex align-items-center justify-content-between">
+                <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                    <header class="text-center">
+                        <div ><img src="img/logo.png" alt="" title="" /></div>
+                        <h1>dashboard</h1>
+                        {% if error %}
+                            <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                        {% endif %}
+                    </header>
+                    <form class="templatemo-login-form" method="post">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+                                <input type="text" id="username" name="username" class="form-control" value="{{ last_username }}" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-key fa-fw"></i></div>
+                                <input type="password" id="password" name="password" class="form-control" placeholder="******">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox squaredTwo">
+                                <input type="checkbox" id="c1" name="cc" />
+                                <label for="c1"><span></span>Remember me</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="templatemo-blue-button width-100">Login</button>
+                        </div>
+                    </form>
                 </div>
+
             </div>
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-addon"><i class="fa fa-key fa-fw"></i></div>
-                    <input type="password" class="form-control" placeholder="******">
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="checkbox squaredTwo">
-                    <input type="checkbox" id="c1" name="cc" />
-                    <label for="c1"><span></span>Remember me</label>
-                </div>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="templatemo-blue-button width-100">Login</button>
-            </div>
-        </form>
-    </div>
+        </div>
+    </section>
+    <!--
     <div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
         <p>Not a registered user yet? <strong><a href="#" class="blue-text">Sign up now!</a></strong></p>
     </div>
-{% endblock %}
+    -->
+    {% endblock %}
+</body>
+</html>

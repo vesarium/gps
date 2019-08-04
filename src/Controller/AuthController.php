@@ -11,14 +11,33 @@ class AuthController extends AbstractController
 {
     /**
      * @Route("/login", name="app_login")
+     * @param AuthenticationUtils $authenticationUtils
+     * @return Response
      */
-    public function login(AuthenticationUtils $authenticationUtils): Response
+    public function login(AuthenticationUtils $authenticationUtils)
     {
-        // get the login error if there is one
         $error = $authenticationUtils->getLastAuthenticationError();
-        // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
+        //$form = $this->createForm(User::class);
 
-        return $this->render('security/login.html.twig', ['last_username' => $lastUsername, 'error' => $error]);
+
+        return $this->render('admin/login.html.twig', [
+            'last_username' => $lastUsername,
+            'error'         => $error,
+
+        ]);
     }
+
+    /**
+     * @Route("/logout", name="app_logout")
+     */
+    public function logout() {
+        throw new \Exception('Will be intercepted before getting here');
+    }
+
+    /**
+     * @Route("/login_check", name="login_check")
+     */
+    public function login_check() {}
 }
+

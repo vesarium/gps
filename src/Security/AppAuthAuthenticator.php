@@ -2,7 +2,9 @@
 
 namespace App\Security;
 
-use App\Entity\User;
+use App\Entity\Devices;
+use App\Entity\Appusers;
+
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,6 +20,8 @@ use Symfony\Component\Security\Csrf\CsrfTokenManagerInterface;
 use Symfony\Component\Security\Guard\Authenticator\AbstractFormLoginAuthenticator;
 use Symfony\Component\Security\Http\Util\TargetPathTrait;
 
+use App\Repository\UserRepository;
+
 class AppAuthAuthenticator extends AbstractFormLoginAuthenticator
 {
     use TargetPathTrait;
@@ -25,57 +29,56 @@ class AppAuthAuthenticator extends AbstractFormLoginAuthenticator
     private $entityManager;
     private $urlGenerator;
     private $csrfTokenManager;
+    private $userRepository;
 
-    public function __construct(EntityManagerInterface $entityManager, UrlGeneratorInterface $urlGenerator, CsrfTokenManagerInterface $csrfTokenManager)
+    public function __construct(UserRepository $userRepository, EntityManagerInterface $entityManager, UrlGeneratorInterface $urlGenerator, CsrfTokenManagerInterface $csrfTokenManager)
     {
         $this->entityManager = $entityManager;
         $this->urlGenerator = $urlGenerator;
         $this->csrfTokenManager = $csrfTokenManager;
+        $this->userRepository = $userRepository;
     }
 
     public function supports(Request $request)
     {
-        return 'app_login' === $request->attributes->get('_route')
+
+        //die('Our authenticator is alive!');
+
+        return $request->attributes->get('_route') === 'app_login'
             && $request->isMethod('POST');
     }
 
     public function getCredentials(Request $request)
     {
-        $credentials = [
+        return [
             'username' => $request->request->get('username'),
             'password' => $request->request->get('password'),
-            'csrf_token' => $request->request->get('_csrf_token'),
         ];
-        $request->getSession()->set(
-            Security::LAST_USERNAME,
-            $credentials['username']
-        );
 
-        return $credentials;
+
     }
 
     public function getUser($credentials, UserProviderInterface $userProvider)
     {
+
+        /*
         $token = new CsrfToken('authenticate', $credentials['csrf_token']);
         if (!$this->csrfTokenManager->isTokenValid($token)) {
             throw new InvalidCsrfTokenException();
         }
+        */
 
-        $user = $this->entityManager->getRepository(User::class)->findOneBy(['username' => $credentials['username']]);
-
-        if (!$user) {
-            // fail authentication with a custom error
-            throw new CustomUserMessageAuthenticationException('Username could not be found.');
-        }
-
-        return $user;
+        return $this->userRepository->findOneBy(['username' => $credentials['username']]);
     }
 
     public function checkCredentials($credentials, UserInterface $user)
     {
+
         // Check the user's password or other credentials and return true or false
         // If there are no credentials to check, you can just return true
-        throw new \Exception('TODO: check the credentials inside '.__FILE__);
+        //throw new \Exception('TODO: check the credentials inside '.__FILE__);
+
+        return true;
     }
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, $providerKey)

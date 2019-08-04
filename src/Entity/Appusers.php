@@ -8,7 +8,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
  */
-class User implements UserInterface
+class Appusers implements UserInterface
 {
     /**
      * @ORM\Id()
@@ -21,6 +21,11 @@ class User implements UserInterface
      * @ORM\Column(type="string", length=180, unique=true)
      */
     private $username;
+
+    /**
+     * @ORM\Column(type="string", length=25, unique=true)
+     */
+    private $name;
 
     /**
      * @ORM\Column(type="json")
@@ -52,12 +57,27 @@ class User implements UserInterface
     /**
      * @see UserInterface
      */
+
+    public function getName(): string
+    {
+        return (string) $this->name;
+    }
+
+    public function setName(string $name): self
+    {
+         $this->name = $name;
+
+         return $this;
+    }
+
+    /**
+     * @see UserInterface
+     */
     public function getRoles(): array
     {
         $roles = $this->roles;
         // guarantee every user at least has ROLE_USER
         $roles[] = 'ROLE_USER';
-
         return array_unique($roles);
     }
 

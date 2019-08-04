@@ -17,7 +17,11 @@ class AdminController extends AbstractController
 
     public function load()
     {
-        return $this->render('admin/admin-main.html.twig', [ ]);
+        $user = $this->getUser();
+        return $this->render('admin/admin-main.html.twig', [
+            'name' => $user->getname(),
+        ]);
+
     }
 
     /**

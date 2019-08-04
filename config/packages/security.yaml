@@ -22,7 +22,7 @@ security:
             form_login:
                 login_path: app_login
                 check_path: login_check
-                default_target_path: homepage
+                default_target_path: app_homepage
                 username_parameter: _username
                 password_parameter: _password
             logout:

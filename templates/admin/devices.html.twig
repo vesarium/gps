@@ -16,21 +16,29 @@
                 </nav>
             </div>
         </div>
-        <div class="templatemo-content-container">
 
+    <div class="templatemo-content-container">
+        <div class="templatemo-flex-row flex-content-row">   <h1>My Devices</h1></div>
+    <div class="templatemo-flex-row flex-content-row">
 
+        {% if not devices %}
+            <h2>add device</h2>
+        {% endif %}
         {% for device in devices %}
-            <div class="span4">
-                <h2>{{ device.deviceId }} {{ device.latitude }} {{ device.longitude }}</h2>
 
+            <div class="templatemo-content-widget white-bg col-1 text-center">
+                <i class="fa fa-times"></i>
+                <h2 class="text-uppercase">{{ device.deviceTitle }}</h2>
+                <h3 class="text-uppercase margin-bottom-10">{{ device.deviceId }}</h3>
+                <img src="/admin-template/images/{{ device.deviceId }}.jpg" class="img-circle img-thumbnail">
             </div>
+
         {% endfor %}
 
 
-            <footer class="text-right">
-                <p>Copyright &copy; 2084 Company Name
-                    | Designed by <a href="http://www.templatemo.com" target="_parent">templatemo</a></p>
-            </footer>
+    </div>
+    </div>
+
 
 
 {% endblock %}

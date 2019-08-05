@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e706afcd-6456-42ae-bc2b-87baae248ba4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Devices.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Devices.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/AppAuthAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/AppAuthAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin-base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin-base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/devices.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/devices.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,20 +43,6 @@
         <option value="CSS File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ment.attr(&quot;src&quot;));var r=(thi</find>
-      <find>parallax</find>
-      <find>window</find>
-      <find>images</find>
-      <find>symfony/eve</find>
-      <find>symfony/frame</find>
-      <find>Devices</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>Deviceslocation</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -226,7 +219,8 @@
       <workItem from="1563866861072" duration="817000" />
       <workItem from="1563896756120" duration="10713000" />
       <workItem from="1564422355385" duration="10115000" />
-      <workItem from="1564689660698" duration="40104000" />
+      <workItem from="1564689660698" duration="66275000" />
+      <workItem from="1564997689117" duration="1151000" />
     </task>
     <task id="LOCAL-00001" summary="luckynumber controller route change">
       <created>1561224974290</created>
@@ -246,7 +240,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -19,12 +19,7 @@ class HomepageController extends AbstractController
 
     public function number()
     {
-
-        $number = random_int(0, 100);
-
-        return $this->render('main.html.twig', [
-            'number' => $number,
-        ]);
+        return $this->render('main.html.twig', []);
     }
 
 }

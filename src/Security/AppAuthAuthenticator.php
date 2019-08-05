@@ -50,10 +50,14 @@ class AppAuthAuthenticator extends AbstractFormLoginAuthenticator
 
     public function getCredentials(Request $request)
     {
-        return [
+
+        $credentials = [
+            'csrf_token' => $request->request->get('_csrf_token'),
             'username' => $request->request->get('username'),
             'password' => $request->request->get('password'),
         ];
+        
+        return $credentials;
 
 
     }
@@ -61,14 +65,16 @@ class AppAuthAuthenticator extends AbstractFormLoginAuthenticator
     public function getUser($credentials, UserProviderInterface $userProvider)
     {
 
+
         /*
         $token = new CsrfToken('authenticate', $credentials['csrf_token']);
         if (!$this->csrfTokenManager->isTokenValid($token)) {
             throw new InvalidCsrfTokenException();
         }
         */
-
         return $this->userRepository->findOneBy(['username' => $credentials['username']]);
+
+
     }
 
     public function checkCredentials($credentials, UserInterface $user)

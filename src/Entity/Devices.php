@@ -19,38 +19,38 @@ class Devices
     /**
      * @ORM\Column(type="text", nullable=true)
      */
-    private $device_name;
+    private $device_id;
 
     /**
      * @ORM\Column(type="text", nullable=true)
      */
-    private $description;
+    private $device_details;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getDeviceName(): ?string
+    public function getDeviceId(): ?string
     {
-        return $this->device_name;
+        return $this->device_id;
     }
 
-    public function setDeviceName(?string $device_name): self
+    public function setDeviceId(?string $device_id): self
     {
-        $this->device_name = $device_name;
+        $this->device_id = $device_id;
 
         return $this;
     }
 
-    public function getDescription(): ?string
+    public function getDeviceDetails(): ?string
     {
-        return $this->description;
+        return $this->device_details;
     }
 
-    public function setDescription(?string $description): self
+    public function setDeviceDetails(?string $devicedetails): self
     {
-        $this->description = $description;
+        $this->device_details = $devicedetails;
 
         return $this;
     }

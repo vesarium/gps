@@ -1,0 +1,35 @@
+{% extends 'admin-base.html.twig' %}
+
+{% block body %}
+    <!-- Left column-->
+        <!-- Main content -->
+        <div class="templatemo-content col-1 light-gray-bg">
+            <div class="templatemo-top-nav-container">
+                <div class="row">
+                    <nav class="templatemo-top-nav col-lg-12 col-md-12">
+                        <ul class="text-uppercase">
+                            <li><a href="/dashboard">Dashboard</a></li>
+                            <li><a href="devices">Devices</a></li>
+                            <li><a href="#" class="active">Maps</a></li>
+                            <li><a href='logout'>Sign out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="templatemo-content-container">
+
+                <div id="map" style="height: 500px; border: 1px solid #AAA;"></div>
+
+                <footer class="text-right">
+                    <p>Copyright &copy; 2019
+                        | Designed by </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+
+
+
+{% endblock %}
